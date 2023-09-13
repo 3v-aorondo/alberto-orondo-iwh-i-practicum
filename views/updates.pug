@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1= title
+    a(href='/') Return to the homepage
+    form(action='/update-cobj', method='post')
+      label(for='name') Name:
+      input(type='text', name='name', id='name', required)
+      br
+      label(for='ingredients') Ingredients:
+      input(type='text', name='ingredients', id='ingredients', required)
+      br
+      label(for='instructions') Instructions:
+      input(type='text', name='instructions', id='instructions', required)
+      br
+      label(for='tastiness') Tastiness:
+      input(type='text', name='tastiness', id='tastiness', required)
+      br
+      input(type='submit', value='Create Custom Object')
